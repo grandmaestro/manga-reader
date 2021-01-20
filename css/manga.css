@@ -1,0 +1,71 @@
+body{
+font-family: "Segoe UI";
+background-color: #065A3E;
+}
+h1{
+text-align: center;
+text-decoration:underline;
+cursor:pointer;
+}
+
+section{
+margin: 25px;
+}
+
+.listSection{
+float:left;
+}
+
+label {
+font-weight: 600;
+}
+
+.chapterLabel{
+	display: inline;
+	margin-right: 40px;
+}
+
+.chapterBox{
+display:inline-table;
+}
+
+.chapterBox div {
+	cursor: pointer;
+	color: #159ABF
+}
+.chapterBox div:hover{
+	color: #CF5300;
+}
+
+.active{
+color: #e56048 !important;
+}
+.comicList{
+min-width: 390px;
+border-radius: 5px
+}
+.thumbnail{
+height: 400px; 
+width:500px; 
+display:inline;
+margin-right:260px;
+margin-top:70px;
+overflow-y:auto;
+overflow-x:hidden;
+float:right;
+}
+
+.thumbImages{
+width:500px;
+height:300px; 
+display:inline;
+
+}
+
+#Nodata {
+    
+    width: 150px;
+    height: 100px;
+    margin-top: 25px;
+	margin-left:160px;
+}

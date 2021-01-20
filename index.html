@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+    <title>Manga-Reader</title>
+    <link href="css/manga.css" rel="stylesheet" />
+
+</head>
+<body ng-app="Manga">
+    <h1> Manga-Reader</h1>
+    <div ng-controller=" Mangacontroller as manga">
+        <section class="listSection">
+            <label for="magazine">Select a Comic : </label>
+           <comiclist></comiclist>           <!-- Custom directive -->
+            <section>
+                <label class="chapterLabel"> Chapters : </label>
+               <chapterbox></chapterbox>       <!-- Custom directive -->
+            </section>
+        </section>
+        <thumbnail></thumbnail>              <!-- Custom directive -->	   
+        <img src="images/Not_available_icon.jpg" id="Nodata" ng-show="showNoData" alt="No Preview Available" />
+    </div>
+    <script src="js/External/jquery-2.1.3.min.js"></script>
+    <script src="js/External/angular.min.js"></script>
+    <script src="js/Custom/manga.js"></script>
+    <script src="js/Custom/mangaAPICaller.js"></script>
+    <script src="js/Custom/customDirectives.js"></script>
+    <script src="js/External/lazyload.js"></script>    
+</body>
+</html>

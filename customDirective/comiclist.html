@@ -1,0 +1,3 @@
+<select name="comicSelect" ng-model="selectedComicId" ng-change="requestComic()" class="comicList">
+    <option ng-repeat="item in comicList" value="{{item.mangaId}}">{{item.name}}</option>
+</select>
